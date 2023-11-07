@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Laura</title>
+    <style>
+      form {
+        margin-left: auto;
+        margin-right: auto;      
+        text-align: center;
+        width: fit-content;
+        padding: 20px;
+      }
+      legend {
+        margin-left: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+      }
+      
+      p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: x-large;
+      }
+      input {
+        background-color: antiquewhite;
+      }
+      select {
+        font-size: medium;
+        text-align: center;
+        background-color: rgba(245, 238, 220, 0.849);
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+     
+     
+    </style>
+  </head>
+  <body>
+  
+    <form>
+        <fieldset>
+            <legend>Datos interesado.</legend>
+      <label
+        ><p>
+          Nombre Empresa:
+          <input type="text" name="empresa" size="20" required /></p
+      ></label>
+      <label
+        ><p>
+          Nombre interesado:
+          <input type="text" name="nombre" size="20" required /></p
+      ></label>
+      <label
+        ><p>
+          Apellidos interesado:
+          <input type="text" name="apellidos" size="40" required /></p
+      ></label>
+      <label>
+        <p>
+          Sexo: <input type="radio" name="hm" value="h" /> Hombre
+          <input type="radio" name="hm" value="m" /> Mujer
+        </p>
+      </label>
+      <label>
+        <p>Número de contacto:
+            <input type="text" name="tlf" size="20" minlength="9" maxlength="9">
+        </p>
+      </label>
+      <label>
+        <p> Correo electrónico:
+            <input type="email" name="email" size="40" minlength="8"required>
+        </p>
+      </label>
+    </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Datos del puesto.</legend>
+      <label>
+          <label><p>Puesto de trabajo:
+            <select>
+                <option>--------------</option>
+                <option>Desarollador</option>
+                <option>Base de datos</option>
+                <option>Proramación</option>
+                <option>Diseñador Web</option>
+                <option>Animación 3D</option>
+
+            </select>
+          </p>
+        </label>
+      <label>
+        <p>
+          Nivel de inglés:
+          <input type="range" name="inglés" size="20"/>
+          </p>
+        </label>
+      <label
+        ><p>
+          Más idiomas requeridos:
+          <input type="text" name="idiomas" size="20"/></p
+      ></label>
+      <label>
+        <p>
+          Ubicación: 
+          <input type="checkbox"/> Oficina
+          <input type="checkbox"/> Teletrabajo
+        </p>
+      </label>
+      <label>
+        <p>
+          Incorporación: <input type="radio" name="Inc" value="ca" /> Cuanto antes
+          <input type="radio" name="Inc" value="s" /> En una semana
+          <input type="radio" name="Inc" value="n" /> No hay fecha
+
+        </p>
+      </label>
+    </fieldset>
+    </form>
+  </body>
+</html>
