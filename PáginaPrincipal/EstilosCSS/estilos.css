@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin:20px auto;
+}
+header {
+    text-align: center;
+}
+nav {
+    position: relative;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+nav div {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 11pt;
+    padding: 1% 5%;
+    text-transform: uppercase;
+}
+.lateral {
+    position: relative;
+    background-color: rgb(95, 94, 94);
+    width: 10%;
+    margin-left: 215px;
+    height: 600px;
+}
+
+footer {
+    background-color: rgb(208, 208, 208);
+    font-size: large;
+    padding: 1% 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 75%;
+
+}
