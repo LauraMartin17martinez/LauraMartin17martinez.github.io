@@ -37,19 +37,23 @@
               <legend><b>INFORMACION PERSONAL</b></legend>
               <br>
               <div class="inputBox">
-                  <input type="text" name="nombre" id="nome" class="inputUser" required>
-                  <label for="nombre" class="labelInput">Nombre completo</label>
-                  
+                  <input type="text" name="nombre" id="nome" class="inputUser" placeholder="Nombre completo" required>
+                  <label for="nombre" class="labelInput"></label> 
               </div>
               <br><br>
               <div class="inputBox">
-                  <input type="text" name="email" id="email" class="inputUser" required>
-                  <label for="email" class="labelInput">Correo electronico</label>
+                <input type="password" name="contraseña" id="psw" class="inputUser" placeholder="Contraseña" minlength="2" required>
+                <label for="contraseña" class="labelInput"></label> 
+            </div>
+            <br><br>
+              <div class="inputBox">
+                  <input type="text" name="email" id="email" class="inputUser" placeholder="Correo electronico" required>
+                  <label for="email" class="labelInput"></label>
               </div>
               <br><br>
               <div class="inputBox">
-                  <input type="tel" name="telefone" id="telefono" class="inputUser" required>
-                  <label for="telefono" class="labelInput">Número de teléfono</label>
+                  <input type="number" name="telefone" id="telefono" class="inputUser" placeholder="Número de teléfono" required>
+                  <label for="telefono" class="labelInput"></label>
               </div>
               <p>Sexo:</p>
               <input type="radio" id="femenino" name="genero" value="femenino" required>
@@ -62,27 +66,61 @@
               <label for="otro">Otros</label>
               <br><br>
               <label for="fecha"><b>Fecha de nacimiento:</b></label>
-              <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento" required>
+              <input type="date" name="Fecha de nacimiento" id="Fecha" required>
               <br><br><br>
               <div class="inputBox">
-                  <input type="text" name="ciudad" id="ciudad" class="inputUser" required>
-                  <label for="ciudad" class="labelInput">Ciudad</label>
+                <label for="color">Color favorito</label>
+                  <input type="color" name="color" id="color" required>
               </div>
               <br><br>
               <div class="inputBox">
-                  <input type="text" name="provincia" id="provincia" class="inputUser" required>
-                  <label for="provincia" class="labelInput">Provincia</label>
+                <p>Elija un país</p>
+                  <select type="menu" name="eu" id="eu" required>
+                    <option value=""></option>
+                    <option value="">ALEMANIA</option>
+                    <option value="">AUSTRIA</option>
+                    <option value="">BÉLGICA</option>
+                    <option value="">BULGARIA</option>
+                    <option value="">CHIPRE</option>
+                    <option value="">CROACIA</option>
+                    <option value="">DINAMARCA</option>
+                    <option value="">ESLOVENIA</option>
+                    <option value="">ESPAÑA</option>
+                    <option value="">ESTONIA</option>
+                    <option value="">FINLANDIA</option>
+                    <option value="">FRANCIA</option>
+                    <option value="">GRECIA</option>
+                    <option value="">HUNGRÍA</option>
+                    <option value="">IRLANDA</option>
+                    <option value="">ITALIA</option>
+                    <option value="">LETONIA</option>
+                    <option value="">LITUANIA</option>
+                    <option value="">LUXEMBURGO</option>
+                    <option value="">MALTA</option>
+                    <option value="">PAÍSES BAJOS</option>
+                    <option value="">POLONIA</option>
+                    <option value="">PORTUGAL</option>
+                    <option value="">REPÚBLICA CHECA</option>
+                    <option value="">REPÚBLICA ESLOVACA</option>
+                    <option value="">RUMANÍA</option>
+                    <option value="">SUECIA</option>
+                    <option value="">OTRO</option>
+                  </select>
               </div>
               <br><br>
-              <div class="inputBox">
-                  <input type="number" name="codigo" id="codigo" class="inputUser" required>
-                  <label for="codigo" class="labelInput">Código postal</label>
-              </div>
-              <br><br>
-              <input type="submit" name="submit" id="submit">
+              <input type="submit" name="submit" id="submit" value="ENVIAR">
+              <input type="reset" name="borrar" id="borrar" value="BORRAR">
+
           </fieldset>
       </form>
   </div>
+  <aside id="izq">
+    <h3>Validar HTML</h3>
+    Pincha <a href="https://validator.w3.org/#validate_by_input+with_options">aquí.</a>
+    <br>
+    <h3>Validar CSS</h3>
+    Pincha <a href="https://jigsaw.w3.org/css-validator/validator">aquí.</a>
+  </aside>
   <footer>
     Para más trabajos entrar <a href="https://github.com/LauraMartin17martinez">aquí.</a>
   </footer>
