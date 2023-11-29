@@ -19,7 +19,7 @@
         <div class="menú">Sobre mi Proyecto</div>
     </nav>
     <aside>
-        <h1>Rana de la lluvia.<h1>
+        <h2>Rana de la lluvia.</h2>
             <img src="img/rana.jpg" alt="rana">
             <ul>
                 <li>Fue la primera especie de rana africana descrita científicamente por Linneo en 1758, bajo el nombre de Rana gibbosa.</li>
@@ -31,29 +31,30 @@
                 <li>Se encuentra amenazada de extinción por la pérdida de su hábitat natural.</li>
             </ul>
     </aside>
+    <main>
     <div class="box"> 
-      <form action="">
+      <form>
           <fieldset>
               <legend><b>INFORMACION PERSONAL</b></legend>
               <br>
-              <div class="inputBox">
-                  <input type="text" name="nombre" id="nome" class="inputUser" placeholder="Nombre completo" required>
-                  <label for="nombre" class="labelInput"></label> 
+              <div>
+                  <label for="nombre">Nombre completo</label> 
+                  <input type="text" name="nombre" id="nombre" placeholder="Full name" required>
               </div>
               <br><br>
-              <div class="inputBox">
-                <input type="password" name="contraseña" id="psw" class="inputUser" placeholder="Contraseña" minlength="2" required>
-                <label for="contraseña" class="labelInput"></label> 
+              <div>
+                <label for="contraseña">Contraseña</label> 
+                <input type="password" name="contraseña" id="contraseña" placeholder="Password" minlength="2" required>
             </div>
             <br><br>
-              <div class="inputBox">
-                  <input type="text" name="email" id="email" class="inputUser" placeholder="Correo electronico" required>
-                  <label for="email" class="labelInput"></label>
+              <div>
+                  <label for="email">Correo electrónico</label>
+                  <input type="text" name="email" id="email" placeholder="Email" required>
               </div>
               <br><br>
-              <div class="inputBox">
-                  <input type="number" name="telefone" id="telefono" class="inputUser" placeholder="Número de teléfono" required>
-                  <label for="telefono" class="labelInput"></label>
+              <div>
+                <label for="telefono">Número de telefono</label>
+                  <input type="number" name="telefone" id="telefono" placeholder="Phone number" required>
               </div>
               <p>Sexo:</p>
               <input type="radio" id="femenino" name="genero" value="femenino" required>
@@ -65,18 +66,18 @@
               <input type="radio" id="otro" name="genero" value="otro" required>
               <label for="otro">Otros</label>
               <br><br>
-              <label for="fecha"><b>Fecha de nacimiento:</b></label>
-              <input type="date" name="Fecha de nacimiento" id="Fecha" required>
-              <br><br><br>
-              <div class="inputBox">
-                <label for="color">Color favorito</label>
-                  <input type="color" name="color" id="color" required>
-              </div>
+              <label for="fecha">Fecha de nacimiento:</label>
+              <input type="date" name="fecha" id="fecha" required>
               <br><br>
-              <div class="inputBox">
+              <div>
+                <label for="color">Color favorito</label>
+                <input type="color" name="color" id="color">
+              </div>
+
+              <div>
                 <p>Elija un país</p>
-                  <select type="menu" name="eu" id="eu" required>
-                    <option value=""></option>
+                  <select name="paises" id="paises">
+                    <option value="">-------------</option>
                     <option value="">ALEMANIA</option>
                     <option value="">AUSTRIA</option>
                     <option value="">BÉLGICA</option>
@@ -114,11 +115,12 @@
           </fieldset>
       </form>
   </div>
+</main>
   <aside id="izq">
-    <h3>Validar HTML</h3>
+    <h2>Validar HTML</h2>
     Pincha <a href="https://validator.w3.org/#validate_by_input+with_options">aquí.</a>
     <br>
-    <h3>Validar CSS</h3>
+    <h2>Validar CSS</h2>
     Pincha <a href="https://jigsaw.w3.org/css-validator/validator">aquí.</a>
   </aside>
   <footer>

@@ -2,18 +2,31 @@
     box-sizing: border-box;
 }
 .container {
-    width: 80%;
+    width: 85%;
     margin:20px auto;
 }
-header {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/otoño.jpg);
+    background-attachment: scroll;
+}
+    header{
+    background-image: linear-gradient(to bottom, rgba(150, 30, 0, 0.83), rgba(224, 120, 0, 0.853));
+    color: antiquewhite;
+    text-shadow: 3px 4.5px 2px rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    padding: 1px;
+    margin-bottom: 10px;
 }
 nav {
     position: relative;
-    background-color: black;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 100%;
     margin-bottom: 2%;
     text-align: center;
 }
@@ -22,25 +35,73 @@ nav div {
     display: inline-block;
     color: white;
     font-size: 11pt;
-    padding: 1% 5%;
+    padding: 1.5% 7%;
     text-transform: uppercase;
 }
-.lateral {
-    position: relative;
-    background-color: rgb(95, 94, 94);
-    width: 10%;
-    margin-left: 215px;
-    height: 600px;
+div .menú {
+    border: 1px white solid;
+    border-radius: 25px;
+    background-color: rgb(165, 77, 42);
+    border-collapse: separate;
 }
-
+aside {
+    color: aliceblue;
+    font-size: small;
+    position: relative;
+    background-color:  rgba(168, 51, 11, 0.905);
+    width: 13%;
+    height: 750px;
+    padding: 1%;
+    text-align: center;
+    border-radius: 15px;
+    float: left;
+}
+aside img {
+    width: 90%;
+    
+}
+aside ul {
+    color: aliceblue;
+    list-style: none;
+    text-align: left;
+    padding: 1%;
+    font-size: medium;
+}
+main{
+    color: white;
+    position: relative;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 2%;
+    border: 1px black solid;
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 16px 16px 8px rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgba(165, 77, 42, 0.596);
+    float: left;
+ 
+}
+aside #izq {
+    color: aliceblue;
+    font-size: small;
+    position: relative;
+    background-color: rgb(197, 53, 0);
+    width: 13%;
+    padding: 1%;
+    text-align: center;
+    border-radius: 15px;
+    float: left;
+}
 footer {
     background-color: rgb(208, 208, 208);
     font-size: large;
+    font-weight: bold;
     padding: 1% 5%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
-    width: 75%;
-
+    width: 100%;
+    border-radius: 15px; 
+    clear: both;
 }

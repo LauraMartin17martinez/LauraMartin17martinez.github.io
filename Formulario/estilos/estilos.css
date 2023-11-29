@@ -8,12 +8,13 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgba(255, 154, 38, 0.74);
+    background-image: url(../img/otoño.jpg);
+    background-attachment: scroll;
 }
     header{
     background-image: linear-gradient(to bottom, rgba(150, 30, 0, 0.83), rgba(224, 120, 0, 0.853));
     color: antiquewhite;
-    text-shadow: 3px 4.5px 2px black;
+    text-shadow: 3px 4.5px 2px rgb(0, 0, 0);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -24,28 +25,31 @@ body{
 }
 nav {
     position: relative;
-    background-color: black;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     margin-bottom: 2%;
     text-align: center;
-    border-radius: 15px;
-
 }
 nav div {
     position: relative;
     display: inline-block;
     color: white;
     font-size: 11pt;
-    padding: 1% 5%;
+    padding: 1.5% 7%;
     text-transform: uppercase;
+}
+div .menú {
+    border: 1px white solid;
+    border-radius: 25px;
+    background-color: rgb(165, 77, 42);
+    border-collapse: separate;
 }
 aside {
     color: aliceblue;
     font-size: small;
     position: relative;
-    background-color: black;
+    background-color:  rgba(168, 51, 11, 0.905);
     width: 13%;
     height: 700px;
     padding: 1%;
@@ -74,7 +78,7 @@ aside ul {
     padding: 15px;
     border-radius: 15px;
     width: 60%;
-    box-shadow: 19px 19px 12px black;
+    box-shadow: 16px 16px 8px rgb(0, 0, 0);
     font-weight: bold;
     background-color: rgba(165, 77, 42, 0.596);
     float: left;
@@ -88,24 +92,6 @@ legend{
     text-align: center;
     background-color: rgba(168, 51, 11, 0.905);
     border-radius: 8px;
-}
-.inputBox{
-    position: relative;
-}
-.inputUser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-.labelInput{
-    position: absolute;
-    top: 0px;
-    left: 0px;
 }
 
 #Fecha{
@@ -158,7 +144,7 @@ aside #izq {
     color: aliceblue;
     font-size: small;
     position: relative;
-    background-color: black;
+    background-color: rgb(197, 53, 0);
     width: 13%;
     height: 700px;
     padding: 1%;
