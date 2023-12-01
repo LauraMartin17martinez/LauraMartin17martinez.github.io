@@ -35,7 +35,7 @@ nav div {
     position: relative;
     display: inline-block;
     color: white;
-    font-size: 11pt;
+    font-size: 12pt;
     padding: 1.5% 7%;
     text-transform: uppercase;
 }
@@ -51,7 +51,7 @@ aside {
     position: relative;
     background-color:  rgba(168, 51, 11, 0.905);
     width: 13%;
-    height: 700px;
+    height: 800px;
     padding: 1%;
     text-align: center;
     border-radius: 15px;
@@ -146,15 +146,16 @@ aside #izq {
     position: relative;
     background-color: rgb(197, 53, 0);
     width: 13%;
-    height: 700px;
+    height: 800px;
     padding: 1%;
     text-align: center;
     border-radius: 15px;
     float: left;
 }
 footer {
-    background-color: rgb(208, 208, 208);
-    font-size: large;
+    background-image: linear-gradient(to top, rgb(207, 173, 61),rgb(161, 97, 13), rgb(189, 47, 12));
+    font-size: 15pt;
+    color: aliceblue;
     font-weight: bold;
     padding: 1% 5%;
     text-align: center;
