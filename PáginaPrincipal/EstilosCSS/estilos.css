@@ -10,7 +10,7 @@ body{
     background-image: url(../../img/otoño.jpg);
     background-attachment: scroll;
 }
-    header{
+header{
     background-image: linear-gradient(to bottom, rgba(150, 30, 0, 0.83), rgba(224, 120, 0, 0.853));
     color: antiquewhite;
     text-shadow: 3px 4.5px 2px rgb(0, 0, 0);
@@ -52,15 +52,21 @@ aside {
     position: relative;
     background-color:  rgba(168, 51, 11, 0.905);
     width: 13%;
-    height: 750px;
+    height: 700px;
     padding: 1%;
     text-align: center;
     border-radius: 15px;
     float: left;
+    margin-bottom: 10px;
 }
 aside img {
     width: 90%;
     
+}
+hr {
+   background-color: rgb(192, 64, 0);
+    height: 5px;
+    border-radius: 25px;
 }
 aside ul {
     color: aliceblue;
@@ -70,40 +76,63 @@ aside ul {
     font-size: medium;
 }
 div .caracteristicas {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     column-count: 3;
-    margin: 0px;
+    column-gap: 3em;
+    column-width: 1px;
+    column-rule-color: rgb(165, 89, 42);
+    column-rule-style: groove;
+    column-rule-width: 13px;s
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     text-align: justify;
 }
 h3{
     margin-top: 0px;
     text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 4px black;
+
+}
+h2 {
+    text-shadow: 4px 5px 4px black;
+}
+.dos_cosas {
+    text-align: right;
+}
+article {
+    border: 1px rgb(255, 255, 255) solid;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px white;
 }
 .actividades {
-    border: 1px solid black;
     column-count: 2;
     margin-top: 0px;
     width: 100%;
     padding: 1%;
-    text-align: justify;
 }
-.aplicacion {
-    border: 1px solid black;
-    column-count: 2;
+.Discord {
     margin-top: 0px;
     width: 100%;
     padding: 1%;
-    text-align: justify;
+    text-align: left;
+    border: 0px;
+    box-shadow: 0px 0px 0px;
 }
+img.discord {
+    width: 200px;
+    border-radius: 10px;
+}
+
 main{
     color: white;
     position: relative;
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 2%;
-    border: 1px black solid;
+    border: 1px rgb(255, 255, 255) solid;
     padding: 15px;
     border-radius: 15px;
     width: 60%;
@@ -119,11 +148,14 @@ aside #izq {
     position: relative;
     background-color: rgb(197, 53, 0);
     width: 13%;
-    height: 750px;
+    height: 700px;
     padding: 1%;
     text-align: center;
     border-radius: 15px;
     float: left;
+}
+.css {
+    margin-top: 80px;
 }
 footer {
     background-image: linear-gradient(to top, rgb(207, 173, 61),rgb(161, 97, 13), rgb(189, 47, 12));
