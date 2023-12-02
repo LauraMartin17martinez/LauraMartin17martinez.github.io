@@ -22,6 +22,24 @@ header{
     padding: 1px;
     margin-bottom: 10px;
 }
+h1#CV {
+    margin-top: 1%;
+
+}
+h2#CVh2 {
+    margin-top: 7%;
+}
+h2 {
+    text-shadow: 4px 5px 4px black;
+}
+.pogona {
+    margin-bottom: 20px;
+}
+div.cabecera {
+    padding: 0.5%;
+    background-color:  rgba(168, 50, 11, 0.597);
+    border-radius: 10px;
+}
 nav {
     position: relative;
     margin-left: auto;
@@ -70,8 +88,15 @@ aside ul {
     font-size: medium;
 }
 caption {
-    text-align: left;
-    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(162, 55, 13, 0.596);
+    text-shadow: 1px 1px 2px black;
+    border-radius: 10px;
+    width: 300px;
 }
 main{
     color: white;
@@ -83,13 +108,12 @@ main{
     padding: 15px;
     border-radius: 15px;
     width: 60%;
-    height: 850px;
+    height: 750px;
     box-shadow: 16px 16px 8px rgb(0, 0, 0);
-    font-weight: bold;
+    font-weight: lighter;
     background-color: rgba(165, 77, 42, 0.596);
     float: left;
 }
-
 
 .foto {
     width: 105px;
@@ -114,20 +138,33 @@ main h2 {
     margin-right: -250px;
 }
 
-aside #izq {
+aside#izq {
     color: aliceblue;
-    font-size: small;
+    font-size: medium;
     position: relative;
-    background-color: rgb(197, 53, 0);
+    background-color:  rgba(168, 51, 11, 0.905);
     width: 13%;
     height: 750px;
-    padding: 1%;
+    padding-top: 4%;
     text-align: center;
     border-radius: 15px;
     float: left;
 }
+
 .css {
-    margin-top: 80px;
+    padding-top: 10%;
+}
+a {
+    color: rgb(79, 27, 0);
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(53, 210, 0);
+    font-size: x-large;
+    text-transform: uppercase;
+}
+a:visited {
+    color: rgb(3, 69, 0);
 }
 footer {
     background-image: linear-gradient(to top, rgb(207, 173, 61),rgb(161, 97, 13), rgb(189, 47, 12));

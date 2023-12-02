@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
     <title>Proyecto Laura MM</title>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>PROYECTO APLICACIONES WEB LAURA</h1>
         </header>
         <nav>
-           <a href="../PáginaPrincipal/index.html"><div class="menú">Página Principal</div></a> 
-           <a href="../Curriculum/curriculum.html"><div class="menú">Curriculum Vitae</div></a>           <a href="../Formulario/Formulario.html"><div class="menú">Formulario</div></a>
-           <a href="../Proyecto/Proyecto.html"><div class="menú">Sobre mi Proyecto</div></a> 
-        </nav>
+            <a href="../PáginaPrincipal/index.html"><div class="menú">Página Principal</div></a> 
+            <a href="../Curriculum/curriculum.html"><div class="menú">Curriculum Vitae</div></a>
+            <a href="../Formulario/Formulario.html"><div class="menú">Formulario</div></a>
+            <a href="../Proyecto/Proyecto.html"><div class="menú">Sobre mi Proyecto</div></a> 
+         </nav>
         <aside>
-            <h2>Rana de la lluvia.</h2>
-                <img src="../img/rana.jpg" alt="rana">
-                <ul>
-                    <li>Fue la primera especie de rana africana descrita científicamente por Linneo en 1758, bajo el nombre de Rana gibbosa.</li>
-                    <br>
-                    <li>Los adultos crecen hasta 45 mm de longitud.</li>
-                    <br>
-                    <li>Es la rana de lluvia más común y más grande.</li>
-                    <br>
-                    <li>Se encuentra amenazada de extinción por la pérdida de su hábitat natural.</li>
-                </ul>
+            <h2>Picozapato.</h2>
+            <a href="https://es.wikipedia.org/wiki/Balaeniceps_rex"><img src="../img/picozapato.jpeg" alt="picozapato"></a>
+            <ul>
+                <li class="picozapato">El picozapato es un ave alta, con un rango de altura típico de 110 a 140 cm y algunos especímenes que alcanzan hasta 152 cm.</li>
+                <li class="picozapato">Se sabe muy poco de las costumbres y orígenes de esta ave sumamente difícil de observar en su medio natural, en parte debido a que se encuentra en peligro de extinción.</li>
+                <li class="picozapato">Se caracteriza por sus movimientos lentos y su tendencia a permanecer quieto durante largos periodos, lo que hace que se describa a la especie como "de aspecto estatuario". </li>
+            </ul>
         </aside>
         <main>
-            <h2>Tres características sobre mí</h2>
-            <div class="caracteristicas">
-                <h3>Gracioso</h3>
-                        <p>Me considero una persona graciosa, ya que, siempre intento estar con una sonrisa y poder hacer feliz a la gente que me rodea. 
-                            Es la personalidad que tengo, pero claro, siempre desde el respeto a las otras personas.</p>
-                    <h3>Trabajador</h3>
-                        <p>Me gusta mucho trabajar solo o en equipo, ya que soy muy bueno organizandome y organizando al resto de mi equipo. 
-                            Me concentro con mucha facilidad, si me centro en un trabajo no paro hasta acabarlo.</p>
-                    <h3>Amable</h3>
-                        <p>Soy muy abierto a conocer gente nueva, soy muy sociable, y siempre trato de estar bien con toda la gente que tengo alrededor. 
-                            También, soy muy hablador, cuando cojo confianza con una persona y no hay manera de callarme pero bueno lo asumo.</p>
+            <h2 class="titulo">LAYOUT, VIDEO Y DOCUMENTACIÓN</h2>
+            <hr>
+            <div class="principal">
+                <div>
+                    <dialog id="layout_proyecto">
+                        <h1>Resumen de mi layout</h1>
+                        <p>El layout de mi proyecto se compone por, un <mark>header</mark> en la parte superior donde están los títulos,
+                            un <mark>nav</mark> donde tenemos la barra de navegación, dos <mark>aside</mark> como barras laterales, un main donde
+                            añado la información principal y por último el <mark>footer</mark>, donde se encuentra el pie de página.</p>
+                        <p>
+                            <input type="button" value="Cerrar"
+                                onclick="document.getElementById('layout_proyecto').removeAttribute('open')">
+                        </p>
+                    </dialog>
+                    <p>
+                        <input type="button" id="info_layout" value="INFORMACIÓN SOBRE EL LAYOUT"
+                            onclick="document.getElementById('layout_proyecto').setAttribute('open', 'open')">
+                    </p>
+                <img src="../img/layout_proyecto.png" alt="layout">
             </div>
-            <h2>Dos actividades que no dejaría de hacer</h2>
-            <section class="actividades">
-                <article>
-                    <h3>Escuchar música</h3>
-                    <a href="https://open.spotify.com/" target="_blank"><img class="spotify" src="img/spotify.png" alt="Spotify" title="Spotify"></a>
-                </article>
-                <article>
-                    <h3>Salir de fiesta</h3>
-                    <img class="fiesta" src="img/fiesta.jpg" alt="Fiesta" title="Fiesta">
-                </article>
-            </section>
-            <h2>Aplicación web que utilizo con más frecuencia</h2>
-            <section class="aplicacion">
-                <article class="instagram">
-                    <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="img/instagram.jpeg" alt="Instagram" title="Instagram"></a>
-                    <p>La aplicación web que mas utilizo es <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-                </article>
-            </section>
+            <div>
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/UJSbeyLTNeÑ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
+            </div>           
+            <hr>
+            <div class="documentacion">
+                <a href="https://open.spotify.com/" target="_blank">ENLACE A LA DOCUMENTACIÓN DEL PROYECTO</a>
+            </div>
         </main>
         <aside id="izq">
-            <h2>Validar HTML</h2>
-            <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank"><img src="../img/html_logo.png" alt="html"></a> 
+            <h2 class="html">Validar HTML</h2>
+            <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank"><img
+                    src="../img/html_logo.png" alt="html"></a>
             Pincha <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank">aquí.</a>
             <br>
             <br>
             <h2 class="css">Validar CSS</h2>
-            <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"><img src="../img/CSS3_logo.png" alt="css"></a>  
+            <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"><img
+                    src="../img/CSS3_logo.png" alt="css"></a>
             Pincha <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">aquí.</a>
-          </aside>
-          <footer>
+        </aside>
+        <footer>
             Para más trabajos entrar <a href="https://github.com/LauraMartin17martinez">aquí.</a>
-          </footer>    </div>
+        </footer>
+    </div>
 </body>
+
 </html>

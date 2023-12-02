@@ -1,155 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
-    <title>Formulario Laura</title>
 
-  </head>
-  <body>
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+  <title>Formulario Laura</title>
+</head>
+
+<body>
+  <div class="container">
     <header>
-        <h1>FORMULARIO PARA CLIENTES</h1>
+      <h1>FORMULARIO</h1>
     </header>
     <nav>
-       <a href="../PáginaPrincipal/index.html"><div class="menú">Página Principal</div></a>
-       <a href="../Curriculum/curriculum.html"><div class="menú">Curriculum Vitae</div></a>       <a href="../Formulario/Formulario.html"><div class="menú">Formulario</div></a>
-       <a href="../Proyecto/Proyecto.html"><div class="menú">Sobre mi Proyecto</div></a> 
-      </nav>
+      <a href="../PáginaPrincipal/index.html"><div class="menú">Página Principal</div></a> 
+      <a href="../Curriculum/curriculum.html"><div class="menú">Curriculum Vitae</div></a>
+      <a href="../Formulario/Formulario.html"><div class="menú">Formulario</div></a>           
+      <a href="../Proyecto/Proyecto.html"><div class="menú">Sobre mi Proyecto</div></a> 
+   </nav>
     <aside>
-        <h2>Rana de la lluvia.</h2>
-            <img src="../img/rana.jpg" alt="rana">
-            <ul>
-                <li>Fue la primera especie de rana africana descrita científicamente por Linneo en 1758, bajo el nombre de Rana gibbosa.</li>
-                <br>
-                <li>Los adultos crecen hasta 45 mm de longitud.</li>
-                <br>
-                <li>Es la rana de lluvia más común y más grande.</li>
-                <br>
-                <li>Se encuentra amenazada de extinción por la pérdida de su hábitat natural.</li>
-            </ul>
+      <h2>Panda rojo.</h2>
+      <a href="https://es.wikipedia.org/wiki/Ailurus_fulgens" target="_blank"><img src="../img/panda_rojo.jpg" alt="panda"/></a>
+      <ul>
+        <li class="panda">El panda rojo o panda menor (Ailurus fulgens) es una especie de mamífero carnívoro de la familia Ailuridae, aunque se había clasificado dentro de las familias de los prociónidos y de los úrsidos.</li>
+        <li class="panda">Miden de 30 a 60 cm, llegando a pesar los machos de 4,5 a 6,2 kilogramos y las hembras de 3 a 4,5 kg.</li>
+        <li class="panda">Hay una población estimada de 2500 individuos maduros, se le considera una especie en peligro de extinción según la Unión Internacional para la Conservación de la Naturaleza (UICN)</li>
+      </ul>
     </aside>
     <main>
-    <div class="box"> 
-      <form>
+      <div class="box">
+        <form>
           <fieldset>
-              <legend><b>INFORMACION PERSONAL</b></legend>
-              <br>
-              <div>
-                  <label for="nombre">Nombre completo</label> 
-                  <input type="text" name="nombre" id="nombre" placeholder="Full name" required>
-              </div>
-              <br><br>
-              <div>
-                <label for="contraseña">Contraseña</label> 
-                <input type="password" name="contraseña" id="contraseña" placeholder="Password" minlength="2" required>
+            <legend><b>PREGUNTAS GENERALES</b></legend>
+            <br />
+            <div>
+              <label for="nombre">Nombre completo</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Full name" required />
             </div>
-            <br><br>
-              <div>
-                  <label for="email">Correo electrónico</label>
-                  <input type="email" name="email" id="email" placeholder="Email" required>
-              </div>
-              <br><br>
-              <div>
-                <label for="telefono">Número de telefono</label>
-                  <input type="number" name="telefone" id="telefono" placeholder="Phone number" required>
-              </div>
-              <p>Sexo:</p>
-              <input type="radio" id="femenino" name="genero" value="femenino" required>
-              <label for="femenino">Femenino</label>
-              <br>
-              <input type="radio" id="masculino" name="genero" value="masculino" required>
-              <label for="masculino">Masculino</label>
-              <br>
-              <input type="radio" id="otro" name="genero" value="otro" required>
-              <label for="otro">Otros</label>
-              <br><br>
-              <label for="fecha">Fecha de nacimiento:</label>
-              <input type="date" name="fecha" id="fecha" required>
-              <br><br>
-              <div>
-                <label for="color">Color favorito</label>
-                <input type="color" name="color" id="color">
-              </div>
-              <br>
-              <div>
-                <label for="hora">Hora a la que se realizó el cuestionario.</label>
-                <input type="time" name="hora" id="hora">
-              </div>
-              <br>
-              <div>
+            <br /><br />
+            <div>
+              <label for="contraseña">Contraseña</label>
+              <input type="password" name="contraseña" id="contraseña" placeholder="Password" minlength="2" required />
+            </div>
+            <br /><br />
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input type="email" name="email" id="email" placeholder="Email" required />
+            </div>
+            <br /><br />
+            <div>
+              <label for="telefono">Número de telefono</label>
+              <input type="number" name="telefone" id="telefono" placeholder="Phone number" required />
+            </div>
+            <p>Sexo:</p>
+            <input type="radio" id="femenino" name="genero" value="femenino" required />
+            <label for="femenino">Femenino</label>
+            <br />
+            <input type="radio" id="masculino" name="genero" value="masculino" required />
+            <label for="masculino">Masculino</label>
+            <br />
+            <input type="radio" id="otro" name="genero" value="otro" required />
+            <label for="otro">Otros</label>
+            <br /><br />
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="fecha" required />
+            <br /><br />
+            <div>
+              <label for="color">Color favorito</label>
+              <input type="color" name="color" id="color" />
+            </div>
+            
+          <br>
+            <div>
+              <label for="hora">Hora a la que se realizó el cuestionario.</label>
+              <input type="time" name="hora" id="hora" />
+            </div>
+            <br />
+            <div>
               <label for="rango">Indique si le gusta el cuestionario (del 1 al 10):</label>
-              <input type="range" name="rango" min="0" max="10" list="lista-rango">
+              <input type="range" name="rango" min="0" max="10" list="lista-rango" />
               <datalist id="lista-rango">
-              <option value="1">
-              <option value="2">
-              <option value="3">
-              <option value="4">
-              <option value="5">
-              <option value="6">
-              <option value="7">
-              <option value="8">
-              <option value="9">
-              <option value="10">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
               </datalist>
-              </div>
-              <br>
-              <div>
-                <p>Elija un país</p>
-                  <select name="paises" id="paises">
-                    <option value="">-------------</option>
-                    <option value="">ALEMANIA</option>
-                    <option value="">AUSTRIA</option>
-                    <option value="">BÉLGICA</option>
-                    <option value="">BULGARIA</option>
-                    <option value="">CHIPRE</option>
-                    <option value="">CROACIA</option>
-                    <option value="">DINAMARCA</option>
-                    <option value="">ESLOVENIA</option>
-                    <option value="">ESPAÑA</option>
-                    <option value="">ESTONIA</option>
-                    <option value="">FINLANDIA</option>
-                    <option value="">FRANCIA</option>
-                    <option value="">GRECIA</option>
-                    <option value="">HUNGRÍA</option>
-                    <option value="">IRLANDA</option>
-                    <option value="">ITALIA</option>
-                    <option value="">LETONIA</option>
-                    <option value="">LITUANIA</option>
-                    <option value="">LUXEMBURGO</option>
-                    <option value="">MALTA</option>
-                    <option value="">PAÍSES BAJOS</option>
-                    <option value="">POLONIA</option>
-                    <option value="">PORTUGAL</option>
-                    <option value="">REPÚBLICA CHECA</option>
-                    <option value="">REPÚBLICA ESLOVACA</option>
-                    <option value="">RUMANÍA</option>
-                    <option value="">SUECIA</option>
-                    <option value="">OTRO</option>
-                  </select>
-              </div>
-              <br><br>
-              <input type="submit" name="submit" id="submit" value="ENVIAR">
-              <input type="reset" name="borrar" id="borrar" value="BORRAR">
-
+            </div>
+            <br>
+            <div>
+              <p>Elija un país</p>
+              <select name="paises" id="paises">
+                <option>-------------</option>
+                <option>ALEMANIA</option>
+                <option>AUSTRIA</option>
+                <option>BÉLGICA</option>
+                <option>BULGARIA</option>
+                <option>CHIPRE</option>
+                <option>CROACIA</option>
+                <option>DINAMARCA</option>
+                <option>ESLOVENIA</option>
+                <option>ESPAÑA</option>
+                <option>ESTONIA</option>
+                <option>FINLANDIA</option>
+                <option>FRANCIA</option>
+                <option>GRECIA</option>
+                <option>HUNGRÍA</option>
+                <option>IRLANDA</option>
+                <option>ITALIA</option>
+                <option>LETONIA</option>
+                <option>LITUANIA</option>
+                <option>LUXEMBURGO</option>
+                <option>MALTA</option>
+                <option>PAÍSES BAJOS</option>
+                <option>POLONIA</option>
+                <option>PORTUGAL</option>
+                <option>REPÚBLICA CHECA</option>
+                <option>REPÚBLICA ESLOVACA</option>
+                <option>RUMANÍA</option>
+                <option>SUECIA</option>
+                <option>OTRO</option>
+              </select>
+            </div>
+            <br /><br />
+            <input type="submit" name="submit" id="submit" value="ENVIAR" />
+            <input type="reset" name="borrar" id="borrar" value="BORRAR" />
           </fieldset>
-      </form>
+        </form>
+      </div>
+    </main>
+    <aside id="izq">
+      <h2 class="html">Validar HTML</h2>
+      <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank"><img src="../img/html_logo.png"
+          alt="html" /></a>
+      Pincha
+      <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank">aquí.</a>
+      <br />
+      <br />
+      <h2 class="css">Validar CSS</h2>
+      <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"><img src="../img/CSS3_logo.png"
+          alt="css" /></a>
+      Pincha
+      <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">aquí.</a>
+    </aside>
+    <footer>
+      Para más trabajos entrar
+      <a href="https://github.com/LauraMartin17martinez">aquí.</a>
+    </footer>
   </div>
-</main>
-<aside id="izq">
-  <h2>Validar HTML</h2>
-  <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank"><img src="../img/html_logo.png" alt="html"></a> 
-  Pincha <a href="https://validator.w3.org/#validate_by_input+with_options" target="_blank">aquí.</a>
-  <br>
-  <br>
-  <h2 class="css">Validar CSS</h2>
-  <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"><img src="../img/CSS3_logo.png" alt="css"></a>  
-  Pincha <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">aquí.</a>
-</aside>
-  <footer>
-    Para más trabajos entrar <a href="https://github.com/LauraMartin17martinez">aquí.</a>
-  </footer>
-    </div>
-  </body>
+</body>
+
 </html>
