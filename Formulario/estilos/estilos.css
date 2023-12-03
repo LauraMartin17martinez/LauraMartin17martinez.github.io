@@ -76,7 +76,7 @@ aside ul {
     padding: 1%;
     font-size: medium;
 }
-.box{
+form{
     color: white;
     position: relative;
     margin-left: 7%;
@@ -102,10 +102,12 @@ legend{
     border-radius: 8px;
 }
 
-#Fecha{
+#fecha{
     border: none;
     padding: 8px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     color: rgb(221, 186, 141);
     background-color: rgb(197, 53, 0);
     outline: none;
